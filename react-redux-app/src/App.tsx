@@ -1,11 +1,13 @@
-import Counter from './components/Counter';
+import React from "react";
+import Counter from "./components/Counter";
 
-function App(){
-  return(
+function App() {
+  return (
     <div>
-      <Counter/>
+      <h1>React + Redux + TypeScript</h1>
+      <Counter />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

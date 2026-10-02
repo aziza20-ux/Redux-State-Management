@@ -1,7 +1,7 @@
-import {createStore, applyMiddleware} from 'redux';
-import type {Middleware} from 'redux';
+import { legacy_createStore as createStore, applyMiddleware } from 'redux';
+import type { Middleware } from 'redux';
 import {rootReducer} from './reducers';
-import logger from 'redux-logger';
+import { logger } from 'redux-logger';
 
 export const store = createStore(rootReducer, applyMiddleware(logger as Middleware));
 export type RootState = ReturnType<typeof store.getState>
